@@ -18,20 +18,6 @@
 <resources>
     <string name="app_filter_class" translatable="false">app.lawnchair.DefaultAppFilter</string>
     <string name="calendar_component_name" translatable="false">com.google.android.calendar/com.android.calendar.AllInOneActivity</string>
-    <string-array name="dynamic_calendar_components_name">
-        <item>com.android.calendar</item>
-        <item>com.blackberry.calendar</item>
-        <item>com.huawei.calendar</item>
-        <item>com.mi.calendar.agenda</item>
-        <item>com.oneplus.calendar</item>
-        <item>com.samsung.android.calendar</item>
-        <item>com.simplemobiletools.calendar.pro</item>
-        <item>com.xiaomi.calendar</item>
-        <item>org.lineageos.etar</item>
-        <item>org.withouthat.acalendarplus</item>
-        <item>org.withouthat.acalendar</item>
-        <item>ws.xsoh.etar</item>
-    </string-array>
     <string name="icon_packs_intent_name" translatable="false">app.lawnchair.icons.THEMED_ICON</string>
     <string name="clock_component_name" translatable="false">com.google.android.deskclock/com.android.deskclock.DeskClock</string>
     <string name="launcher_activity_logic_class" translatable="false">app.lawnchair.LauncherActivityCachingLogic</string>
@@ -43,17 +29,6 @@
     <string name="window_manager_proxy_class" translatable="false">app.lawnchair.util.LawnchairWindowManagerProxy</string>
 
     <bool name="config_header_protection_supported">true</bool>
-
-    <string-array name="filtered_components">
-        <!-- Voice search -->
-        <item>com.google.android.googlequicksearchbox/.VoiceSearchActivity</item>
-        <!-- GNL -->
-        <item>com.google.android.launcher/.StubApp</item>
-        <!-- Action Services -->
-        <item>com.google.android.as/com.google.android.apps.miphone.aiai.allapps.main.MainDummyActivity</item>
-        <!-- Lawnchair -->
-        <item>@string/launcher_component</item>
-    </string-array>
 
     <!-- Which QSB search provider to use by default -->
     <string name="config_default_qsb_search_provider_id" translatable="false">startpage</string>
