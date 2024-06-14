@@ -28,12 +28,6 @@
         <item>@dimen/swipe_up_scale_start</item>
         <item>@dimen/swipe_up_max_velocity</item>
     </array>
-    <string-array name="filtered_components">
-        <item>com.google.android.googlequicksearchbox/.VoiceSearchActivity</item>
-        <item>com.google.android.launcher/.StubApp</item>
-        <item>com.google.android.as/com.google.android.apps.miphone.aiai.allapps.main.MainDummyActivity</item>
-        <item>@string/launcher_component</item>
-    </string-array>
     <string-array name="gesture_blocking_activities">
         <item>com.android.launcher3/com.android.quickstep.interaction.GestureSandboxActivity</item>
     </string-array>
