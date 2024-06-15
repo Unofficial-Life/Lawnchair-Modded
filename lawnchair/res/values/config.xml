@@ -30,7 +30,6 @@
 
     <bool name="config_header_protection_supported">true</bool>
 
-    </array>
      <string-array name="filtered_components">
         <item>com.google.android.googlequicksearchbox/.VoiceSearchActivity</item>
         <item>com.google.android.launcher/.StubApp</item>

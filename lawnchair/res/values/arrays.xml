@@ -27,6 +27,7 @@
     <array name="dynamic_resources">
         <item>@dimen/swipe_up_scale_start</item>
         <item>@dimen/swipe_up_max_velocity</item>
+    </array>
     <string-array name="gesture_blocking_activities">
         <item>com.android.launcher3/com.android.quickstep.interaction.GestureSandboxActivity</item>
     </string-array>
