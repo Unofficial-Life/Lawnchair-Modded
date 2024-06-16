@@ -44,20 +44,10 @@ jobs:
       - run: ./gradlew assembleLawnWithQuickstepRelease
       - uses: actions/upload-artifact@v4
         with:
-          name: Universal APK
-          path: build/outputs/apk/lawnWithQuickstep/release/*-universal.apk
-      - uses: actions/upload-artifact@v4
-        with:
-          name: ARM64 APK
-          path: build/outputs/apk/lawnWithQuickstep/release/*-arm64.apk
-      - uses: actions/upload-artifact@v4
-        with:
-          name: ARMv7a APK
-          path: build/outputs/apk/lawnWithQuickstep/release/*-armeabi-v7a.apk
-      - uses: actions/upload-artifact@v4
-        with:
-          name: Mapping File
-          path: build/outputs/mapping/lawnWithQuickstepRelease/mapping.txt
+          name: Release APK
+          path: |
+            build/outputs/apk/lawnWithQuickstep/release/*.apk
+            build/outputs/mapping/lawnWithQuickstepRelease/mapping.txt
 
   check-style:
     runs-on: ubuntu-latest
