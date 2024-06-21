@@ -46,8 +46,7 @@ jobs:
         with:
           name: Release APK
           path: |
-            build/outputs/apk/lawnWithQuickstep/release/*.apk
-            build/outputs/mapping/lawnWithQuickstepRelease/mapping.txt
+             path: build/outputs/apk/lawnWithQuickstep/release/*.apk
 
   check-style:
     runs-on: ubuntu-latest
