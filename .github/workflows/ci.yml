@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - 14-dev
+      - toggle-experiment
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
@@ -14,7 +14,7 @@ on:
       - 'NOTICE'
   pull_request:
     branches:
-      - 14-dev
+      - toggle-experiment
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'

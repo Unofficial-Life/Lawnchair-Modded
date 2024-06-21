@@ -136,6 +136,13 @@ fun GeneralPreferences() {
                     label = stringResource(id = R.string.transparent_background_icons),
                     description = stringResource(id = R.string.transparent_background_icons_description),
                 )
+            
+            ExpandAndShrink(visible = themedIconsEnabled) {
+                SwitchPreference(
+                    adapter = prefs.transparentIconBackground.getAdapter(),
+                    label = stringResource(id = R.string.new_theming_toggle),
+                    description = stringResource(id = R.string.new_theming_toggle_description),
+                )
             }
             NavigationActionPreference(
                 label = stringResource(id = R.string.icon_shape_label),
