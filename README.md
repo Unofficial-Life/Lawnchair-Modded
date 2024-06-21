@@ -3,8 +3,8 @@
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
     <!-- ❤️ Credit to Raine on the Lawnchair Discord --->
-    <source media="(prefers-color-scheme: dark)" srcset="docs/Lawnchair Mod Banner.png" width="250px">
-    <img alt="Lawnchair Mod Banner" src="docs/Lawnchair Mod Banner.png" width="250px">
+    <source media="(prefers-color-scheme: dark)" srcset="docs/Lawnchair Mod Banner.png">
+    <img alt="Lawnchair Mod Banner" src="docs/Lawnchair Mod Banner.png">
 </picture>
 
 $~$
