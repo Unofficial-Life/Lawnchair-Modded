@@ -69,6 +69,8 @@
     <string name="icon_style">아이콘 스타일</string>
     <string name="transparent_background_icons">투명 테마 아이콘</string>
     <string name="transparent_background_icons_description">테마 아이콘에 투명한 배경 사용하기</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">아이콘 모양</string>
     <string name="auto_adaptive_icons_label">자동 적응형 아이콘</string>
     <string name="auto_adaptive_icons_description">모든 비적응형 아이콘들을 위한 기능입니다.</string>

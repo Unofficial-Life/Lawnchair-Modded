@@ -69,6 +69,8 @@
     <string name="icon_style">圖示風格</string>
     <string name="transparent_background_icons">圖示套用主題色與透明背景</string>
     <string name="transparent_background_icons_description">在套用主題色的圖示上使用透明背景</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">圖示形狀</string>
     <string name="auto_adaptive_icons_label">自動自適應圖示</string>
     <string name="auto_adaptive_icons_description">套用在所有非自適應圖示</string>

@@ -69,6 +69,8 @@
     <string name="icon_style">Gaya Ikon</string>
     <string name="transparent_background_icons">Ikon Bertema Transparan</string>
     <string name="transparent_background_icons_description">Gunakan latar belakang transparan pada ikon bertema</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">Ukuran Ikon</string>
     <string name="auto_adaptive_icons_label">Ikon Adaptif Otomatis</string>
     <string name="auto_adaptive_icons_description">Untuk semua Ikon Non-Adaptif.</string>

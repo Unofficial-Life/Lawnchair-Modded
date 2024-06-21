@@ -69,6 +69,8 @@
     <string name="icon_style">アイコンのスタイル</string>
     <string name="transparent_background_icons">透明なテーマアイコン</string>
     <string name="transparent_background_icons_description">テーマアイコンの背景を透明にします</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">アイコンの形状</string>
     <string name="auto_adaptive_icons_label">自動アダプティブアイコン</string>
     <string name="auto_adaptive_icons_description">すべての非アダプティブアイコンが対象</string>

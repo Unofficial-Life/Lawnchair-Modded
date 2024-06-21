@@ -69,6 +69,8 @@
     <string name="icon_style">Mtindo wa ikoni</string>
     <string name="transparent_background_icons">Aikoni zenye Mandhari Ya Uwazi</string>
     <string name="transparent_background_icons_description">Tumia mandharinyuma yenye uwazi kwenye ikoni zenye mada</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">Umbo la icon</string>
     <string name="auto_adaptive_icons_label">Aikoni Zinazojirekebisha Kiotomatiki</string>
     <string name="auto_adaptive_icons_description">Kwa aikoni zote zisizobadilika kiotomatiki.</string>

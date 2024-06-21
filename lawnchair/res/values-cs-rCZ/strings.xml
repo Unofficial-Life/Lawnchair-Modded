@@ -69,6 +69,8 @@
     <string name="icon_style">Styl ikon</string>
     <string name="transparent_background_icons">Ikony s průhledným tématem</string>
     <string name="transparent_background_icons_description">Použít průhledné pozadí u ikon s tématem</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">Tvar ikon</string>
     <string name="auto_adaptive_icons_label">Adaptivní ikony</string>
     <string name="auto_adaptive_icons_description">Pro všechny neadaptivní ikony.</string>

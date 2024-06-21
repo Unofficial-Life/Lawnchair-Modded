@@ -69,6 +69,8 @@
     <string name="icon_style">Ikon stílus</string>
     <string name="transparent_background_icons">Áttetsző témázott ikonok</string>
     <string name="transparent_background_icons_description">Áttetsző háttér használata témázott ikonok esetén</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">Ikon alak</string>
     <string name="auto_adaptive_icons_label">Automatikus adaptív ikonok</string>
     <string name="auto_adaptive_icons_description">A nem adaptív ikonok számára.</string>

@@ -69,6 +69,8 @@
     <string name="icon_style">Estilo ng Icon</string>
     <string name="transparent_background_icons">Transparent Themed Icons</string>
     <string name="transparent_background_icons_description">Gumamit ng transparent na background sa themed icons</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="icon_shape_label">Hugis ng Icon</string>
     <string name="auto_adaptive_icons_label">Auto Adaptive Icons</string>
     <string name="auto_adaptive_icons_description">Para sa lahat ng mga hindi umaangkop na mga icon.</string>

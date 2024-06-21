@@ -53,6 +53,8 @@
     <string name="always_reload_icons_description">Epuka kutumia ikoni zilizoakibishwa kutoka kwa pakiti za ikoni</string>
     <string name="transparent_background_icons">Aikoni zenye Mandhari Ya Uwazi</string>
     <string name="transparent_background_icons_description">Tumia mandharinyuma yenye uwazi kwenye ikoni zenye mada</string>
+    <string name="new_theming_toggle">New monet/MD 3 colouring</string>
+    <string name="new_theming_toggle_description">Use new monet/material you theming colours for more pixel feel</string>
     <string name="smartspace_mode_selection">Uchaguzi wa mtoaji Kwa Mtazamo</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Mzunguko wa Skrini ya Nyumbani</string>
