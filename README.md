@@ -1,4 +1,4 @@
-# Lawnchair 14 Modded
+# <p align="center"> Lawnchair 14 Modded
 
 <picture>
     <!-- Avoid image being clickable with slight workaround --->
@@ -8,8 +8,12 @@
 </picture>
 
 $~$
+<p align="center">
+          <img src="https://m3-markdown-badges.vercel.app/stars/9/2/Unofficial-Life/Lawnchair-Modded">
 
-**_Lawnchair Balance between Simplicity and Customization_**
+<p align="center"> <b> <i> Lawnchair Balance between Simplicity and Customization </b> </i>
+
+$~$
 
 It is a free, open-source home app for Android. Taking Launcher3 — Android’s default home app — as a starting point, it ports Pixel Launcher features and introduces rich options for customization.
 
@@ -37,7 +41,7 @@ It is a free, open-source home app for Android. Taking Launcher3 — Android’s
 
 <br>
 
-> **Magisk/Ksu Module** →  **[Here](https://github.com/Unofficial-Life/Lawnchair-Launcher-Module)**
+> **Magisk/Ksu Module** →  **[Here](https://github.com/Unofficial-Life/Lawnchair-Launcher-Module)** (Q to U QPR2)
 
 ## Why this fork ?
 
