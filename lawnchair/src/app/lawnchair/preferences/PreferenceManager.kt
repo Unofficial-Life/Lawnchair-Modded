@@ -94,6 +94,11 @@ class PreferenceManager private constructor(private val context: Context) : Base
     val themedIcons = BoolPref("themed_icons", true, recreate)
     val drawerThemedIcons = BoolPref("drawer_themed_icons", false, recreate)
     val hotseatQsbCornerRadius = FloatPref("pref_hotseatQsbCornerRadius", 1F, recreate)
+    val searchBackgroundHotseatTransparency = IntPref("pref_searchHotseatTranparency", 0, recreate)
+
+    val enableWallpaperBlur = BoolPref("pref_enableWallpaperBlur", false, recreate)
+    val wallpaperBlur = IntPref("pref_wallpaperBlur", 25, recreate)
+    val wallpaperBlurFactorThreshold = IntPref("pref_wallpaperBlurFactor", 25, recreate)
 
     val recentsActionScreenshot = BoolPref("pref_recentsActionScreenshot", !isOnePlusStock)
     val recentsActionShare = BoolPref("pref_recentsActionShare", isOnePlusStock)
