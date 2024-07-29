@@ -1,4 +1,4 @@
-name: CI
+name: Build com.android.launcher3
 
 on:
   workflow_dispatch:
