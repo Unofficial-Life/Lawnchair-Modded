@@ -1,9 +1,8 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - 14-dev
+  workflow_dispatch:
+
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
