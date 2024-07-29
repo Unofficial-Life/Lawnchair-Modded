@@ -1,7 +1,9 @@
-name: Build com.android.launcher3
+name: Build
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+    - 14-dev
 
     paths-ignore:
       - '.idea/**'
