@@ -1,4 +1,4 @@
-name: Build
+name: CI
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           cache-encryption-key: Da25KUVSE5jbGds2zXmfXw==
-          cache-cleanup: true
+          gradle-home-cache-cleanup: true
       - run: ./gradlew assembleLawnWithQuickstepRelease
       - uses: actions/upload-artifact@v4
         with:
@@ -63,4 +63,5 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-home-cache-cleanup: true
+          
       - run: ./gradlew spotlessCheck
