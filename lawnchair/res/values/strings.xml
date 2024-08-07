@@ -542,6 +542,7 @@
     <string name="search_provider_app_search">App search</string>
     <string name="search_provider_startpage" translatable="false">Startpage</string>
     <string name="search_provider_google" translatable="false">Google</string>
+    <name="search_provider_firefox" translatable="false">Firefox</string>
     <string name="search_provider_iceraven" translatable="false">Iceraven</string>
     <string name="search_provider_google_go" translatable="false">Google Go</string>
     <string name="search_provider_duckduckgo" translatable="false">DuckDuckGo</string>
