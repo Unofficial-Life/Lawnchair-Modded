@@ -229,7 +229,7 @@ android {
     productFlavors {
         lawn {
             dimension "app"
-            applicationId 'app.lawnchair'
+            applicationId 'app.lawnchair.unofficial'
         }
 
         withQuickstep {
