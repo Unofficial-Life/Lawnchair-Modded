@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-    - 14-dev
+    - experiment
 
     paths-ignore:
       - '.idea/**'
@@ -15,7 +15,7 @@ on:
       - 'NOTICE'
   pull_request:
     branches:
-      - 14-dev
+      - experiment
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
@@ -48,7 +48,6 @@ jobs:
           name: Release APK
           path: |
             build/outputs/apk/lawnWithQuickstep/release/*.apk
-            build/outputs/mapping/lawnWithQuickstepRelease/mapping.txt
 
   check-style:
     runs-on: ubuntu-latest
