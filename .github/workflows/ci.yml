@@ -3,8 +3,7 @@ name: CI
 on:
   push:
     branches:
-    - 14-dev
-
+      - 14-dev
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
@@ -39,9 +38,6 @@ jobs:
           distribution: 'zulu'
           java-version: 21
       - uses: gradle/actions/setup-gradle@v4
-        with:
-          cache-encryption-key: Da25KUVSE5jbGds2zXmfXw==
-          gradle-home-cache-cleanup: true
       - run: ./gradlew assembleLawnWithQuickstepRelease
       - uses: actions/upload-artifact@v4
         with:
@@ -61,7 +57,4 @@ jobs:
           distribution: 'zulu'
           java-version: 21
       - uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-home-cache-cleanup: true
-          
       - run: ./gradlew spotlessCheck
