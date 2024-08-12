@@ -265,10 +265,6 @@ android {
             }
         }
 
-        github {
-            manifest.srcFile "channel/github/AndroidManifest.xml"
-        }
-
         lawnWithQuickstep {
             manifest.srcFile "quickstep/AndroidManifest-launcher.xml"
         }
