@@ -187,6 +187,8 @@
     <string name="auto_adaptive_icons_label">Auto-adaptive icons</string>
     <string name="auto_adaptive_icons_description">For all non-adaptive icons</string>
 
+    <string name="shadow_bg_icons_label">Enable shadow background icons</string>
+
     <string name="background_lightness_label">Background lightness</string>
     <string name="adaptive_icon_background_description">Use 100% background lightness for white</string>
 
@@ -597,7 +599,8 @@
     </plurals>
 
     <!-- Folder settings -->
-    <string name="folder_preview_bg_opacity_label">Icon background opacity</string>
+    <string name="folder_preview_bg_opacity_label">Icon preview background opacity</string>
+    <string name="folder_bg_opacity_label">Folder background opacity</string>
     <string name="folder_preview_bg_color_label">Icon background color</string>
 
     <string name="max_folder_columns">Maximum folder columns</string>
