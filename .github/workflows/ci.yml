@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - 14-dev
+      - com.android.launcher3
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
