@@ -148,7 +148,7 @@ android {
 
     applicationVariants.configureEach { variant ->
         variant.outputs.configureEach {
-            outputFileName = "Lawnchair-${versionString}-${buildTime}-${buildCommit}.apk"
+            outputFileName = "[com.android.launcher3]Lawnchair-${versionString}-${buildTime}-${buildCommit}.apk"
         }
     }
 
@@ -229,7 +229,7 @@ android {
     productFlavors {
         lawn {
             dimension "app"
-            applicationId 'app.lawnchair'
+            applicationId 'com.android.launcher3'
         }
 
         withQuickstep {
