@@ -227,7 +227,7 @@ fun IconPackGrid(
     val iconPacks by LocalPreferenceInteractor.current.iconPacks.collectAsStateWithLifecycle()
     val themedIconPacks by LocalPreferenceInteractor.current.themedIconPacks.collectAsStateWithLifecycle()
     val lazyListState = rememberLazyListState()
-    val padding = 12.dp
+    val padding = 10.dp
     var iconPacksLocal = iconPacks
     val themedIconPacksName = themedIconPacks.map { it.name }
 
