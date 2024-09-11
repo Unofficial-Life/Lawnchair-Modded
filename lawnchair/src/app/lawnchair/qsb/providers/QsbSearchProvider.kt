@@ -122,8 +122,6 @@ sealed class QsbSearchProvider(
         fun values() = listOf(
             AppSearch,
             Google,
-            Firefox,
-            Iceraven,
             GoogleGo,
             Youtube,
             PixelSearch,
@@ -135,6 +133,8 @@ sealed class QsbSearchProvider(
             Bing,
             Brave,
             Yandex,
+            Firefox,
+            Iceraven,
             Startpage,
         )
 
