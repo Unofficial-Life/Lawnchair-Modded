@@ -37,12 +37,11 @@ allprojects {
         }
         dependencies {
             implementation 'androidx.core:core-ktx:1.13.1'
-            implementation 'androidx.appcompat:appcompat:1.7.0'
         }
     }
 
     plugins.withId('com.google.protobuf') {
-        def protocVersion = '4.28.0'
+        def protocVersion = '4.28.1'
         protobuf {
             // Configure the protoc executable
             protoc {
@@ -294,6 +293,11 @@ androidComponents {
     }
 }
 
+composeCompiler {
+    stabilityConfigurationFile = layout.projectDirectory.file("compose_compiler_config.conf")
+    reportsDestination = layout.buildDirectory.dir("compose_build_reports")
+}
+
 addFrameworkJar('framework-14.jar')
 
 dependencies {
@@ -336,7 +340,6 @@ dependencies {
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.2'
-    implementation "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.8"
     implementation 'com.github.ChickenHook:RestrictionBypass:2.2'
     implementation 'dev.rikka.tools.refine:runtime:4.4.0'
 
@@ -389,7 +392,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:6.5.2'
 
     // Compose drag and drop library
-    implementation 'sh.calvin.reorderable:reorderable:2.3.2'
+    implementation 'sh.calvin.reorderable:reorderable:2.3.3'
 
     // Smartspacer
     implementation('com.kieronquinn.smartspacer:sdk-client:1.0.11') {
