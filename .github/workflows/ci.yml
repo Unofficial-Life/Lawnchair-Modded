@@ -40,7 +40,6 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
       - run: ./gradlew assembleLawnWithQuickstepRelease
       - uses: actions/upload-artifact@v4
-        if: github.ref == 'refs/heads/trunk' && github.event_name == 'push'
         with:
           name: Release APK
           path: |
