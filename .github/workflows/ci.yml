@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - Merge
+      - 14-dev
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
@@ -14,7 +14,7 @@ on:
       - 'NOTICE'
   pull_request:
     branches:
-      - Merge
+      - 14-dev
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
