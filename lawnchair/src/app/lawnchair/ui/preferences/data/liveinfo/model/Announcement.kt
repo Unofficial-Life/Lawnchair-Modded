@@ -25,7 +25,6 @@ data class Announcement(
     val url: String? = null,
     private val active: Boolean = true,
     private val test: Boolean = false,
-    private val channel: String? = null,
     private val icon: String? = null,
 ) {
 
@@ -54,7 +53,6 @@ data class Announcement(
             if (active.not()) return false
             if (text.isBlank()) return false
             if (test && BuildConfig.DEBUG.not()) return false
-            if (channel != null && channel != BuildConfig.FLAVOR_channel) return false
             return true
         }
 }
