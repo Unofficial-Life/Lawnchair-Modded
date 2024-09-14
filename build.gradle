@@ -114,17 +114,19 @@ allprojects {
     }
 }
 
-final def buildTime = new Date().format("yyyyMMddHHmm")
-
 final def buildCommit = providers.exec {
     commandLine('git', 'rev-parse', '--short=7', 'HEAD')
 }.standardOutput.asText.get().trim()
 
-final def versionString = "14.0.0"
-final def versionDisplayName = "${versionString} (${buildCommit})"
-final def parts = versionString.split("\\.")
-final def majorVersion = parts[0]
-final def versionInt = parts[0].toInteger() * 1000000 + parts[1].toInteger() * 10000 + parts[2].toInteger() * 100
+final def ciBuild = System.getenv("CI") == "true"
+final def ciRef = System.getenv("GITHUB_REF") ?: ""
+final def ciRunNumber = System.getenv("GITHUB_RUN_NUMBER") ?: ""
+final def isReleaseBuild = ciBuild && ciRef.contains("beta")
+final def devReleaseName = ciBuild ? "Dev.(#${ciRunNumber})" : "Dev.(${buildCommit})"
+final def version = "14"
+final def releaseName = "Beta 3"
+final def versionDisplayName = "${version}.${isReleaseBuild ? releaseName : devReleaseName}"
+final def majorVersion = versionDisplayName.split("\\.")[0]
 
 final def quickstepMinSdk = "29"
 final def quickstepMaxSdk = "34"
@@ -132,7 +134,9 @@ final def quickstepMaxSdk = "34"
 android {
     namespace "com.android.launcher3"
     defaultConfig {
-        versionCode versionInt
+        // Lawnchair Launcher 14.0 Beta 3
+        // See CONTRIBUTING.md#versioning-scheme
+        versionCode 14_00_02_03
         versionName "${versionDisplayName}"
         buildConfigField "String", "VERSION_DISPLAY_NAME", "\"${versionDisplayName}\""
         buildConfigField "String", "MAJOR_VERSION", "\"${majorVersion}\""
@@ -147,7 +151,8 @@ android {
 
     applicationVariants.configureEach { variant ->
         variant.outputs.configureEach {
-            outputFileName = "Lawnchair-${versionString}-${buildTime}-${buildCommit}.apk"
+            def channel = variant.productFlavors.last().name
+            outputFileName = "Lawnchair.${variant.versionName}.$channel.${variant.buildType.name}.apk"
         }
     }
 
@@ -201,12 +206,17 @@ android {
 
     buildTypes {
         all {
-            pseudoLocalesEnabled true
-            resValue("string", "derived_app_name", "Lawnchair")
             signingConfig releaseSigning
+            pseudoLocalesEnabled true
+        }
+
+        debug {
+            applicationIdSuffix ".debug"
+            resValue("string", "derived_app_name", "Lawnchair (Debug)")
         }
 
         release {
+            resValue("string", "derived_app_name", "Lawnchair")
             minifyEnabled true
             shrinkResources true
             proguardFiles proguardFilesFromAosp + "proguard.pro"
@@ -223,17 +233,27 @@ android {
     }
 
     // See: https://developer.android.com/studio/build/build-variants#flavor-dimensions
-    flavorDimensions += ["app", "recents"]
+    flavorDimensions += ["app", "recents", "channel"]
 
     productFlavors {
         lawn {
             dimension "app"
-            applicationId 'app.lawnchair'
         }
 
         withQuickstep {
             dimension "recents"
             minSdk 26
+        }
+
+        github {
+            applicationId 'app.lawnchair'
+            dimension "channel"
+        }
+
+        play {
+            applicationId "app.lawnchair.play"
+            dimension "channel"
+            isDefault true
         }
 
         configureEach {
@@ -264,7 +284,11 @@ android {
             }
         }
 
-        lawnWithQuickstep {
+        lawnWithQuickstepGithub {
+            manifest.srcFile "quickstep/AndroidManifest-launcher.xml"
+        }
+
+        lawnWithQuickstepPlay {
             manifest.srcFile "quickstep/AndroidManifest-launcher.xml"
         }
 
@@ -338,7 +362,7 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:1.3.2"
     implementation "androidx.preference:preference-ktx:1.2.1"
 
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0'
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.2'
     implementation 'com.github.ChickenHook:RestrictionBypass:2.2'
     implementation 'dev.rikka.tools.refine:runtime:4.4.0'
