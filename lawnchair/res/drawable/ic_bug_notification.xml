@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~     This file is part of Lawnchair Launcher.
-  ~
-  ~     Lawnchair Launcher is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     Lawnchair Launcher is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU General Public License
-  ~     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="#000" android:pathData="M14,12H10V10H14M14,16H10V14H14M20,8H17.19C16.74,7.22 16.12,6.55 15.37,6.04L17,4.41L15.59,3L13.42,5.17C12.96,5.06 12.5,5 12,5C11.5,5 11.04,5.06 10.59,5.17L8.41,3L7,4.41L8.62,6.04C7.88,6.55 7.26,7.22 6.81,8H4V10H6.09C6.04,10.33 6,10.66 6,11V12H4V14H6V15C6,15.34 6.04,15.67 6.09,16H4V18H6.81C7.85,19.79 9.78,21 12,21C14.22,21 16.15,19.79 17.19,18H20V16H17.91C17.96,15.67 18,15.34 18,15V14H20V12H18V11C18,10.66 17.96,10.33 17.91,10H20V8Z" />
+<vector
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:pathData="M11.00,14.50L13.00,14.50,M11.00,10.78L13.00,10.78,M3.20,9.00L5.94,9.00,M3.20,16.00L5.94,16.00,M18.06,9.00L20.80,9.00,M18.06,16.00L20.80,16.00,M3.20,12.50L5.94,12.50,M18.06,12.50L20.80,12.50,M9.07,5.34L6.93,3.20,M14.93,5.34L17.07,3.20"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M12.00,20.80C8.56,20.80,5.92,17.97,5.94,14.74L5.94,10.81C5.92,7.58,8.56,4.75,12.00,4.75C15.44,4.75,18.08,7.58,18.06,10.81L18.06,14.74C18.07,16.84,17.04,18.41,15.88,19.40"
+        android:strokeColor="#ff000000"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round" />
 </vector>

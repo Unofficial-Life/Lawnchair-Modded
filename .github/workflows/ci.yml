@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - '*-dev'
+      - trunk
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'
@@ -14,6 +14,8 @@ on:
       - 'LICENSE'
       - 'NOTICE'
   pull_request:
+    branches:
+      - trunk
     paths-ignore:
       - '.idea/**'
       - '.gitattributes'

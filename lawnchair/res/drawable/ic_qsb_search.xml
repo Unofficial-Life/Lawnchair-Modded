@@ -1,25 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-     Copyright (C) 2016 The Android Open Source Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportHeight="18.0"
-    android:viewportWidth="18.0"
-    android:autoMirrored="true">
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <path
-        android:fillColor="#ffffff"
-        android:pathData="M12.5 11H11.71L11.43 10.73C12.63 9.33001 13.25 7.42002 12.91 5.39002C12.44 2.61002 10.12 0.390015 7.32001 0.0500152C3.09001 -0.469985 -0.469985 3.09001 0.0500152 7.32001C0.390015 10.12 2.61002 12.44 5.39002 12.91C7.42002 13.25 9.33001 12.63 10.73 11.43L11 11.71V12.5L15.25 16.75C15.66 17.16 16.33 17.16 16.74 16.75C17.15 16.34 17.15 15.67 16.74 15.26L12.5 11ZM6.50002 11C4.01002 11 2.00002 8.99002 2.00002 6.50002C2.00002 4.01002 4.01002 2.00002 6.50002 2.00002C8.99002 2.00002 11 4.01002 11 6.50002C11 8.99002 8.99002 11 6.50002 11Z" />
+        android:pathData="M16.93,16.93L19.80,19.80,M4.64,12.25Q4.20,11.18,4.20,10.02Q4.20,8.86,4.64,7.79Q5.09,6.72,5.90,5.91Q6.72,5.09,7.78,4.65Q8.85,4.20,10.02,4.20Q11.19,4.20,12.26,4.65Q13.32,5.09,14.14,5.91Q14.95,6.72,15.40,7.79Q15.84,8.86,15.84,10.02Q15.84,11.18,15.40,12.25Q14.95,13.32,14.14,14.13Q13.32,14.95,12.26,15.40Q11.19,15.84,10.02,15.84Q8.85,15.84,7.78,15.40Q7.29,15.19,6.92,14.95"
+        android:strokeColor="#ffffffff"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round" />
 </vector>
