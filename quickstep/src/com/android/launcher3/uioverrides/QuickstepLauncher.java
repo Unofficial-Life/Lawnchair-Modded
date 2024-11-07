@@ -666,7 +666,12 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer 
         // work, we must opt-in BEFORE registering back dispatcher. So we need to call
         // setEnableOnBackInvokedCallback() before super.onCreate()
         if (Utilities.ATLEAST_U && enablePredictiveBackGesture()) {
-            getApplicationInfo().setEnableOnBackInvokedCallback(true);
+            try {
+                getApplicationInfo().setEnableOnBackInvokedCallback(true);
+            } catch (NoSuchMethodError e) {
+                // Ignore
+            }
+            
         }
         super.onCreate(savedInstanceState);
         if (savedInstanceState != null) {
@@ -1354,8 +1359,6 @@ public class QuickstepLauncher extends Launcher implements RecentsViewContainer 
     @Override
     public void dispatchDeviceProfileChanged() {
         super.dispatchDeviceProfileChanged();
-        Trace.instantForTrack(TRACE_TAG_APP, "QuickstepLauncher#DeviceProfileChanged",
-                getDeviceProfile().toSmallString());
         SystemUiProxy.INSTANCE.get(this).setLauncherAppIconSize(mDeviceProfile.iconSizePx);
         TaskbarManager taskbarManager = mTISBindHelper.getTaskbarManager();
         if (taskbarManager != null) {
