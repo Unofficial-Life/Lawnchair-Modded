@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~     This file is part of Lawnchair Launcher.
-  ~
-  ~     Lawnchair Launcher is free software: you can redistribute it and/or modify
-  ~     it under the terms of the GNU General Public License as published by
-  ~     the Free Software Foundation, either version 3 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     Lawnchair Launcher is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU General Public License
-  ~     along with Lawnchair Launcher.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
-<vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="24dp"
-    android:width="24dp"
-    android:viewportWidth="24"
-    android:viewportHeight="24">
-    <path android:fillColor="?android:textColorSecondary" android:pathData="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z" />
+<vector
+    android:height="24.0dip"
+    android:width="24.0dip"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <path
+        android:pathData="M19.46,7.00L19.46,6.18Q19.46,5.59,19.23,5.04Q19.00,4.49,18.59,4.07Q18.17,3.65,17.62,3.43Q17.07,3.20,16.47,3.20L11.13,3.20Q10.53,3.20,9.98,3.43Q9.43,3.65,9.01,4.07Q8.60,4.49,8.37,5.04Q8.14,5.59,8.14,6.18L8.14,14.22Q8.14,14.82,8.37,15.37Q8.60,15.91,9.01,16.33Q9.43,16.75,9.98,16.98Q10.53,17.21,11.13,17.21L16.47,17.21Q17.07,17.21,17.62,16.98Q18.17,16.75,18.59,16.33Q19.00,15.91,19.23,15.37Q19.46,14.82,19.46,14.22L19.46,11.31,M4.55,8.59L4.55,17.82Q4.55,18.41,4.78,18.96Q5.00,19.51,5.42,19.92Q5.84,20.34,6.39,20.57Q6.94,20.80,7.54,20.80L16.76,20.80"
+        android:strokeColor="?android:textColorSecondary"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round" />
 </vector>
