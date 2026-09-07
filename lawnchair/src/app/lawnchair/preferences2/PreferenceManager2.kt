@@ -226,6 +226,11 @@ class PreferenceManager2 private constructor(private val context: Context) : Pre
         defaultValue = context.resources.getBoolean(R.bool.config_default_show_status_bar),
     )
 
+    val hideClockOnHomeScreen = preference(
+        key = booleanPreferencesKey(name = "hide_clock_on_home_screen"),
+        defaultValue = false,
+    )
+
     val rememberPosition = preference(
         key = booleanPreferencesKey(name = "all_apps_remember_position"),
         defaultValue = context.resources.getBoolean(R.bool.config_default_remember_position),

@@ -325,10 +325,10 @@
     <string name="smartspace_calendar_persian">Persian</string>
 
     <string name="generic_smartspace_concatenated_desc">%1$s, %2$s</string>
-    <string name="smartspace_icu_date_pattern_gregorian_wday_month_day_no_year" translatable="false">EEEMMMd</string>
+    <string name="smartspace_icu_date_pattern_gregorian_wday_month_day_no_year" translatable="false">EEE, d MMM</string>
     <string name="smartspace_icu_date_pattern_gregorian_time" translatable="false">HH:mm</string>
     <string name="smartspace_icu_date_pattern_gregorian_time_12h" translatable="false">hh:mm aa</string>
-    <string name="smartspace_icu_date_pattern_gregorian_date" translatable="false"> dd MMMM</string>
+    <string name="smartspace_icu_date_pattern_gregorian_date" translatable="false">, EEE d MMM</string>
     <string name="smartspace_icu_date_pattern_persian_wday_month_day_no_year" translatable="false">l، j F</string>
     <string name="smartspace_icu_date_pattern_persian_time" translatable="false">H:i</string>
     <string name="smartspace_icu_date_pattern_persian_time_12h" translatable="false">g:i a</string>
@@ -518,6 +518,8 @@
     <string name="status_bar_label">Status bar</string>
     <string name="show_status_bar">Show status bar</string>
     <string name="dark_status_bar_label">Dark status bar</string>
+    <string name="hide_clock_on_home_screen_label">Hide clock on home screen</string>
+    <string name="hide_clock_on_home_screen_description">Clock stays hidden only while the home screen is shown. It reappears in the app list and everywhere else.</string>
 
     <string name="home_screen_text_color">Text color</string>
     <string name="color_light">Light</string>

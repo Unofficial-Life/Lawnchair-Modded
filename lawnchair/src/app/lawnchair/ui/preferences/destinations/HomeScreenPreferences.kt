@@ -161,6 +161,11 @@ fun HomeScreenPreferences(
                     label = stringResource(id = R.string.dark_status_bar_label),
                 )
             }
+            SwitchPreference(
+                adapter = prefs2.hideClockOnHomeScreen.getAdapter(),
+                label = stringResource(id = R.string.hide_clock_on_home_screen_label),
+                description = stringResource(id = R.string.hide_clock_on_home_screen_description),
+            )
         }
         PreferenceGroup(heading = stringResource(id = R.string.icons)) {
             SliderPreference(

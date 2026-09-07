@@ -3,8 +3,8 @@ package app.lawnchair.smartspace
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.icu.text.DateFormat
 import android.icu.text.DisplayContext
+import android.icu.text.SimpleDateFormat
 import android.os.SystemClock
 import android.text.format.DateFormat.is24HourFormat
 import android.util.AttributeSet
@@ -135,7 +135,7 @@ class IcuDateTextView @JvmOverloads constructor(
         } else {
             format = context.getString(R.string.smartspace_icu_date_pattern_gregorian_wday_month_day_no_year)
         }
-        val formatter = DateFormat.getInstanceForSkeleton(format, Locale.getDefault())
+        val formatter = SimpleDateFormat(format, Locale.getDefault())
         formatter.setContext(DisplayContext.CAPITALIZATION_FOR_STANDALONE)
         return { formatter.format(it) }
     }
